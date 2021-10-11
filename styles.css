@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url("kaleb-tapp-1deQbU6DhBg-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/* set logo image */
+a img{
+  
+  width: 50px;
+  /* margin-top: -25px;
+  margin-left: -87px */
+  
+}
+/* set nave bar */
+nav{
+   display: flex;
+ padding: 2% 6%;
+ justify-content: space-between;
+ align-items: center;
+}
+ul{
+  margin-top: -21px;
+}
+.navlink{
+ flex:1;
+ text-align: center;
+}
+.navlink ul li{
+  
+  list-style: none;
+  display: inline-block;
+ padding: 8px 12px;
+ padding-left: 20px;
+  padding-right: 20px;
+ position: relative;
+}
+/* list item in anker ankerTank */
+.navlink ul li a{
+  color: white;
+  text-decoration: none;
+  
+    font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+
+}
+.navlink ul li ::after{
+  content: '';
+  width: 0%;
+  background-color: rgb(212, 135, 79);
+  height: 2px;
+  display: block;
+  margin: auto;
+ transition: all 0.5s;
+}
+.navlink ul li :hover::after{
+ width:100%;
+
+}
+.text-box{
+   
+ width: 100%;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.text-box h2{
+  font-size:64px;
+  font-weight: bold;
+}
+.text-box p{
+  font-size: 16px;
+  color:white;
+  margin: 10px 0px 40px;
+}
+.btn-hero{
+  color: white;
+  background: transparent;
+  padding: 12px 20px;
+  border:3px solid white;
+    
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.btn-hero:hover{
+ 
+  background-color: red;
+}
+nav .far {
+  display: none;
+}
+nav .fas{
+  display: none;
+}
+@media(max-width:700px) {
+  .btn-hero{
+    color: white;
+    background: transparent;
+    padding: 4px 9px;
+    border:3px solid white;
+      
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn-hero:hover{
+   
+    background-color: red;
+  }
+  .text-box h2{
+    font-size:20px;
+    position: relative;
+    font-weight: bold;
+  }
+  /* .colum-two input{
+    width: 40%;
+  } */
+  .coloum-col {
+    margin-right: 200px;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+  .item{
+    margin: 0;
+  }
+  .sub-header h1{
+    font-size:10px;
+  }
+  .red-btn{
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  nav .far{
+     display:block;
+    width: 0%;
+    color:white;
+   font-size: 22px;
+    cursor: pointer;
+
+ 
+  }
+  nav .fas{
+    top:0;
+    margin-right:10px ;
+    display:block;
+    width: 0%;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .navlink ul li{
+  display: block;
+  }
+  .navlink{
+    height: 100vh;
+    width: 200px;
+    
+    top:0;
+    right:-200px;
+    position: absolute;
+  background-color: orange;
+   transition: 1s;
+  z-index: 2;
+  }
+  .navlink ul {
+   padding: 30px;
+  }
+  .row{
+   
+    flex-direction: column;
+    
+    align-items: center;
+  }
+  section#Cont h1 {
+    font-size: 15px;
+}
+section#Cont {
+  width: 32%;
+}
+}
+.course{
+  width: 80%;
+  margin: auto;
+ padding-top:100px ;
+  text-align: center;
+}
+.course h1
+{
+  font-weight: 600;
+  font-size: 36px;
+}
+.course p{
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 22px;
+  padding: 13px;
+}
+.row{
+  margin-top:4% ;
+  display: flex;
+  justify-content: space-between;
+}
+.course-coloum{
+  flex-basis: 31%;
+  background-color: rgb(168, 200, 206);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px 12px;
+  width: 300px;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+h3{
+  text-align: center;
+  margin: 10px 0px;
+  font-weight: 600;
+}
+.course-coloum:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+}
+
+.colloge-compus{
+  
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  padding-top: 50px;
+
+}
+.compus {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin: 25px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  
+}
+.compus img{
+  width: 100%;
+  display: block;
+}
+
+.layer{
+ background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+   top: 0;
+  left:  0;
+ 
+  transition: all 0.5s linear;
+}
+.layer:hover{
+  background-color: rgba(266,0,0,0.6);
+  
+
+}
+.layer h3{
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;  
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3{
+  opacity: 1;
+  bottom: 49%;
+
+}
+.Facilities{
+ text-align: center;
+ width:75% ;
+ margin: auto;
+ padding-top: 100px  ;
+}
+.campus-facilities{
+   flex-basis:31% ;
+   margin-bottom: 5%;
+   border-radius: 10px;
+   text-align:left ;
+   transition: 0.5s;
+   cursor:pointer;
+}
+.campus-facilities img{
+  width: 100%;
+  border-radius: 10px;
+}
+.campus-facilities p{
+  padding: 0;
+}
+.campus-facilities h3{
+  margin-top: 16px;
+  margin-top: 16px;
+  text-align: left;
+}
+.campus-facilities:hover{
+  transform: scale(1.1);
+}
+.testterminals{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.studentest{
+  flex-basis: 44%;
+
+display: flex;
+background-color: rgb(122, 172, 179);
+border-radius:10px;
+margin-bottom:5%;
+text-align: left;
+padding:25px;
+cursor: pointer;
+}
+.studentest img{
+ 
+  border-radius:50% ;
+  width: 50px;
+  height: 50px;
+}
+.studentest p{
+  margin: 15px;
+}
+.studentest h3{
+  text-align: left;
+  margin-left: 15px;
+}
+
+#stae{
+  margin-left:11px ;
+}
+#star{
+  margin-left: 12px;
+}
+#Cont{
+  width: 65%;
+  margin: 100px auto;
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(contact.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 100px ;
+  color: white;
+  
+}
+
+#Cont h1{
+  margin-bottom: 40px;
+  padding: 0;
+}
+.footer{
+  background-color:black;
+  width: 100%;
+  text-align: center;
+ color: white;
+ padding: 30px 0;
+}
+.paar{
+  
+  padding-top: 20px;
+}
+.icons{
+  padding: 10px;
+}
+.fab{
+  margin: 5px;
+  color :geen;
+}
+.fa-heart{
+  color: coral;
+  margin: 5px;
+}
+.sub-header
+{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url('clay-banks-LjqARJaJotc-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color:white;
+}
+.sub-header h1{
+  padding-top: 50px;
+}
+div img{
+  width: 50%;
+  height: 300px;
+  
+}
+.About-us{
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.about-col{
+  flex-basis: 41%;
+  padding:30px 5px;
+}
+.about-col h1{
+padding: 0;
+margin-bottom: 10px;
+font-size: 40px;
+}
+.about-col{
+padding: 0;
+}
+.red-btn{
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100px;
+  text-align: center;
+  border: 2px solid red;
+  background: transparent;
+  color:red
+}
+.red-btn:hover{
+  color: white;
+}
+.sub-header h1{
+  font-size: 38px;
+}
+.bloge{
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+}
+.blog-left{
+  flex-basis: 65%;
+}
+.blog-left h2{
+  padding-top: 50px;
+  padding-bottom: 40px;
+  font-weight: 600;
+}
+.blog-left img{
+  width: 100%;
+}
+.bloge-right{
+  flex-basis: 32%;
+}
+.bloge-right h2{
+  background-color: red;
+  color:white;
+  padding: 7px 0;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.bloge-right div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.comment-form{
+  border:3px solid rgb(236, 226, 226);
+  margin: 50px 0;
+padding: 10px 30px;
+cursor: pointer;
+}
+.form-comment input,.comment-form textarea{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background-color: rgb(230, 223, 223);
+}
+.comment-form button{
+  width: 25%;
+
+}
+.comment-form h3{
+  text-align: left;
+}
+.bloge-right{
+  cursor: pointer;
+}
+.contact-page {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+.contact-page iframe{
+  width: 100%;
+}
+.Contact{
+  width: 80%;
+  margin: auto;
+ padding-bottom:50px;
+}
+.coloum-col{
+  
+  width: 60%;
+  margin-left: 40px;
+}
+.item{
+  margin: 20px;
+}
+.item span h5{
+  font-size: 20px;
+  
+}
+.item i{
+  margin: 5px;
+  color:coral ;
+}
+.item span p{
+  font-weight: 500;
+  font-family: serif;
+
+}
+.colum-two{
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 17px;
+  padding: 10px;
+  outline: none;
+  box-shadow: 2px 2px 13px 3px rgb(119, 118, 118);
+  border-radius: 10px;
+  border: 2px solid coral;
+}
+
+.colum-two input{
+  width: 90%;
+  padding: 15px;
+ margin-left: 10px;
+
+  margin-bottom: 18px;
+  box-sizing:border-box ;
+}
+
+.colum-two form textarea{
+  width: 90%;
+margin-left: 10px;
+}
+.colum-two button{
+  cursor: pointer;
+  width: 40%;
+margin-left: 10px;
+  
+}
+h6{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+.About-us .image{
+width: 300px;
+height: 400px;
+
+} 
+.About-us .image img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover
+}
